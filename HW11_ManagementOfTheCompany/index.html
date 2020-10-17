@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Management of the company</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <script defer src="Scripts/company.js"></script>
+    <script defer src="Scripts/employee.js"></script>
+    <script defer src="Scripts/script.js"></script>
+</head>
+<body>
+<h1>Employees management</h1>
+<div class="newEmp">
+    <div class="info">
+        <p id="labelId">Enter id:</p>
+        <input id="id" type="number" autofocus>
+    </div>
+    <div class="info">
+        <p id="labelFirstName">Enter first name:</p>
+        <input id="firstName" type="text" autofocus>
+    </div>
+    <div class="info">
+        <p id="labelLastName">Enter last name:</p>
+        <input id="lastName" type="text" autofocus>
+    </div>
+    <div class="info">
+        <p id="labelAge">Enter employee's age:</p>
+        <input id="age" type="number" autofocus>
+    </div>
+    <div class="info">
+        <p id="labelSalary">Enter employee's salary:</p>
+        <input id="salary" type="number" autofocus>
+    </div>
+</div>
+<div class="buttons">
+    <button id="btnAdd" type="submit">Add employee</button>
+    <button id="btnShow">Show company</button>
+    <button id="btnGet">Get stats</button>
+</div>
+<div class="listEmp">
+    <h2>Employee list:</h2>
+    <ul id="employees"></ul>
+</div>
+<div class="stats">
+    <h2>Stats:</h2>
+    <ul id="compStats"></ul>
+</div>
+</body>
+</html>
