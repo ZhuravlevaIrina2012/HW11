@@ -36,6 +36,9 @@ function newList(emp) {
 }
 
 function handleGetStats() {
+    while (stats.firstChild) {
+        stats.removeChild(stats.firstChild);
+    }
     const totalSalary = document.createElement('li');
     const salary = company.totalSalary();
     const avgSalary = document.createElement('li');
